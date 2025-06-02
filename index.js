@@ -3,7 +3,7 @@ const DHT = require('hyperdht')
 const { relay } = require('@hyperswarm/dht-relay')
 const Stream = require('@hyperswarm/dht-relay/ws')
 
-const port = process.env.PORT || 8080
+const port = 'wss://p2p-relay-production.up.railway.app'
 const dht = new DHT()
 const server = new WebSocketServer({ port })
 
